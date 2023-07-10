@@ -10,4 +10,6 @@ public interface loanService {
 
 public List getData();
 
+public void deleteData(int loanapId);
+
 }

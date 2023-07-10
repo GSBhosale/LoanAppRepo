@@ -27,4 +27,10 @@ public class loanServiceImpl implements loanService {
 		return lr.findAll();
 	}
 
+	@Override
+	public void deleteData(int loanapId) {
+		// TODO Auto-generated method stub
+		lr.deleteById(loanapId);
+	}
+
 }
