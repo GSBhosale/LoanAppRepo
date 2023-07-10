@@ -1,6 +1,9 @@
 package com.bitlogic.LoanApplocation.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,5 +22,10 @@ public class Enquiry {
 	{
 		return ls.save(la);
 	}
-	
+	@GetMapping("/view")
+	public List<LoanApp> getdata()
+	{
+		List al=ls.getData();
+		return al;
+	}
 }

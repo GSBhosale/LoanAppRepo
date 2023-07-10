@@ -1,5 +1,7 @@
 package com.bitlogic.LoanApplocation.serviceImpl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,12 @@ public class loanServiceImpl implements loanService {
 	public LoanApp save(LoanApp la) {
 		// TODO Auto-generated method stub
 		return lr.save(la);
+	}
+
+	@Override
+	public List<LoanApp> getData() {
+		// TODO Auto-generated method stub
+		return lr.findAll();
 	}
 
 }
