@@ -4,9 +4,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Enquiry {
-	
-	
-	
 
+
+	@post
+	public void save()
+	{
+		
+	}
 	
 }
