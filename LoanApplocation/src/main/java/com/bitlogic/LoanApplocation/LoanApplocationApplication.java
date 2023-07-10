@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class LoanApplocationApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Hello EveryBody");
 		SpringApplication.run(LoanApplocationApplication.class, args);
 	}
 
